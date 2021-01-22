@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Montserrat Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Montserrat-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Oranienbaum Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Oranienbaum-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'PlayfairDisplay Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/PlayfairDisplay-Regular.woff') format('woff');
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+// переменные
+$main-color-text: #000000;
+$secondary-color-text: #ffffff;
+
+body {
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    font-family: 'PlayfairDisplay Regular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.2;
+    color: $main-color-text;
+
+}
+
+a {
+    color: $main-color-text;
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    width: 100%;
+    max-width: 1620px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+p, h1, h2, h3, h4, ul {
+    margin: 0;
+    padding: 0;
+}
+.btn {
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #EBFF00 0%, #FF8A00 100%);
+    border-image-slice: 1;
+    padding: 19px 40px;
+    background-color: transparent;
+    font-size: 24px;
+    line-height: 1.33;
+    text-align: center;
+    letter-spacing: 0.17em;
+    cursor: pointer;
+    color: $secondary-color-text;
+}
+.nav-toggle {
+    display: none;
+}
+
+
+// media
+$tablet-width: 768px;
+$desktop-width: 1920px;
+$mobile--width: 375px;
