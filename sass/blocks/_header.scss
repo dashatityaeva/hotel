@@ -148,6 +148,8 @@
 }
 
 .socials {
+    padding-left: 15px;
+
     &__item {
         &:not(:last-child) {
             margin-bottom: 44px;
@@ -225,7 +227,55 @@
     background: linear-gradient(180deg, #EBFF00 0%, #FF8A00 100%);
 }
 
+
+@media (max-width: 1280px) {
+    .square {
+        display: none;
+    }
+
+    .logo {
+        width: 30%;
+        padding-bottom: 10px;
+    }
+
+    .nav {
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 992px) {
+    .logo {
+        display: none;
+    }
+
+    .nav {
+        width: 100%;
+        margin-bottom: 15px;
+
+        &__item {
+            min-width: 100%;
+            justify-content: space-between;
+        }
+    }
+}
+
 @media (max-width: 768px) {
+    .logo {
+        display: flex;
+    }
+
+    .header {
+        &__subtitle {
+            font-size: 20px;
+        }
+
+        &__title {
+            font-size: 50px;
+        }
+    }
+
     .nav-toggle {
         display: block;
         z-index: 4;
@@ -235,10 +285,10 @@
     .nav,
     .lang-switcher,
     .main-number,
-    .socials,
-    .square {
+    .socials {
         display: none;
     }
+
     .socials {
         &__item:not(:last-child) {
             margin-bottom: 0px;
@@ -262,6 +312,7 @@
 
             &__item {
                 flex-direction: column;
+                justify-content: flex-start;
 
                 &-list:not(:last-child) {
                     margin-right: 0px;
@@ -273,7 +324,7 @@
         .lang-switcher {
             display: block;
             position: absolute;
-            bottom: 40%;
+            bottom: 180px;
             width: 100%;
             z-index: 4;
         }
@@ -282,7 +333,7 @@
             display: block;
             z-index: 4;
             position: absolute;
-            bottom: 30%;
+            bottom: 130px;
             width: 100%;
 
         }
@@ -301,7 +352,35 @@
         justify-content: center;
         z-index: 4;
 
-        
+
     }
 
+}
+
+@media (max-width: 375px) {
+
+
+    .header {
+        background-image: url(../img/main-bg-mb.svg);
+
+        &__subtitle {
+            font-size: 12px;
+        }
+
+        &__title {
+            font-size: 36px;
+        }
+    }
+
+    .menu-active {
+        .nav {
+            padding-top: 50px;
+        }
+    //     .lang-switcher {
+    //         bottom: 30%;
+    //     }
+    //     .main-number {
+    //         bottom: 20%;
+    //     }
+    }
 }

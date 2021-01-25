@@ -79,6 +79,12 @@ p, h1, h2, h3, h4, ul {
 .nav-toggle {
     display: none;
 }
+@media (max-width: 375px) {
+    btn {
+        font-size: 14px;
+        padding: 12px 40px;
+    }
+}
 
 
 // media
