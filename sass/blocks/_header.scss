@@ -226,6 +226,9 @@
 .nav-toggle_active span::after {
     background: linear-gradient(180deg, #EBFF00 0%, #FF8A00 100%);
 }
+.none-padding {
+    padding: 0;
+}
 
 
 @media (max-width: 1280px) {
@@ -303,8 +306,9 @@
             width: 100vw;
             height: 100vh;
             position: absolute;
-            top: -17px;
-            left: -10px;
+            top: 0;
+            //left: -10px;
+          
             z-index: 3;
             display: flex;
             justify-content: center;
@@ -341,6 +345,8 @@
         .navigation-block {
             width: 100vw;
             height: 100vh;
+            top: 0;
+            left: 0;
         }
     }
 
@@ -351,15 +357,11 @@
         width: 100%;
         justify-content: center;
         z-index: 4;
-
-
     }
 
 }
 
 @media (max-width: 375px) {
-
-
     .header {
         background-image: url(../img/main-bg-mb.svg);
 
@@ -376,11 +378,5 @@
         .nav {
             padding-top: 50px;
         }
-    //     .lang-switcher {
-    //         bottom: 30%;
-    //     }
-    //     .main-number {
-    //         bottom: 20%;
-    //     }
     }
 }

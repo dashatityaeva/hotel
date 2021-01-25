@@ -15,10 +15,12 @@ menu.forEach(item => {
 const toggleBtn = document.querySelector('.nav-toggle');
 const menuActive = document.querySelector('.header__wrap');
 const socialsActive = document.querySelector('.header__socials');
+const container = document.querySelector('.container');
 
 toggleBtn.addEventListener('click', function(e) {
     e.preventDefault();
     this.classList.toggle('nav-toggle_active');
     menuActive.classList.toggle('menu-active');
     socialsActive.classList.toggle('header__socials-active');
+    container.classList.toggle('none-padding');
 })

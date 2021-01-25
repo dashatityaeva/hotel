@@ -699,6 +699,10 @@ p, h1, h2, h3, h4, ul {
   background: linear-gradient(180deg, #EBFF00 0%, #FF8A00 100%);
 }
 
+.none-padding {
+  padding: 0;
+}
+
 @media (max-width: 1280px) {
   .square {
     display: none;
@@ -766,8 +770,7 @@ p, h1, h2, h3, h4, ul {
     width: 100vw;
     height: 100vh;
     position: absolute;
-    top: -17px;
-    left: -10px;
+    top: 0;
     z-index: 3;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -807,6 +810,8 @@ p, h1, h2, h3, h4, ul {
   .menu-active .navigation-block {
     width: 100vw;
     height: 100vh;
+    top: 0;
+    left: 0;
   }
   .header__socials-active {
     top: auto;
