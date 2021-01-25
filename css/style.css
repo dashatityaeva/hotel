@@ -658,8 +658,9 @@ p, h1, h2, h3, h4, ul {
   height: 22px;
   background-color: transparent;
   position: relative;
-  top: 20px;
-  right: 20px;
+  top: 0;
+  right: 0;
+  padding: 20px;
   position: absolute;
   border: none;
 }
