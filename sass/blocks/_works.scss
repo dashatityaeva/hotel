@@ -1,0 +1,104 @@
+.works {
+    margin: 100px 0;
+    &__wrap {
+        margin-bottom: 70px;
+    }
+
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 320px;
+        height: 809px;
+
+        &--reverse {
+            flex-direction: row-reverse;
+            background-color: #000000;
+        }
+    }
+
+    &__content,
+    &__img-wrap {
+        width: 50%;
+        position: relative;
+    }
+
+    &__img-wrap img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* !!!позволяет масщтабировать и центрировать */
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    &__title {
+        font-family: 'Oranienbaum Regular', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 1.26;
+        text-align: center;
+        letter-spacing: 0.17em;
+        text-transform: uppercase;
+        color: $main-color-text;
+        margin-bottom: 14px;
+
+        &--reverse {
+            color: #ffffff;
+        }
+    }
+
+    &__title span {
+        font-size: 48px;
+    }
+
+    &__description {
+        max-width: 550px;
+        font-size: 24px;
+        line-height: 1.26;
+        text-align: center;
+        letter-spacing: 0.17em;
+        color: $main-color-text;
+        margin-bottom: 29px;
+
+        &--reverse {
+            color: #ffffff;
+        }
+    }
+
+    &__btn {
+        color: $main-color-text;
+        padding: 19px 40px;
+
+        &--reverse {
+            color: #ffffff;
+        }
+    }
+
+    &__btn-more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 314px;
+        height: 70px;
+        background-color: #fff;
+        font-size: 24px;
+        line-height: 1.33;
+        text-align: center;
+        letter-spacing: 0.17em;
+        color: #000000;
+        cursor: pointer;
+        margin: auto;
+    }
+}
