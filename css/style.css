@@ -1410,6 +1410,9 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
 }
 
 @media (max-width: 768px) {
+  .works .main__title {
+    font-size: 35px;
+  }
   .works__item {
     height: 800px;
     -webkit-box-orient: vertical;
@@ -1474,5 +1477,28 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
   letter-spacing: 0.18em;
   color: #000000;
   margin-bottom: 38px;
+}
+
+@media (max-width: 768px) {
+  .information .main__title {
+    font-size: 35px;
+  }
+  .information__subtitle, .information__content {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 425px) {
+  .information {
+    padding: 50px 0;
+  }
+  .information .main__title {
+    font-size: 30px;
+    margin-bottom: 60px;
+  }
+  .information__subtitle, .information__content {
+    font-size: 14px;
+    line-height: 1.36;
+  }
 }
 /*# sourceMappingURL=style.css.map */

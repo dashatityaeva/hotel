@@ -127,6 +127,11 @@
 
 @media (max-width: 768px) {
     .works {
+        .main {
+            &__title {
+                font-size: 35px;
+            }
+        }
         &__item {
             height: 800px;
             flex-direction: column-reverse;
