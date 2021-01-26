@@ -1,8 +1,5 @@
 .question-answer {
     padding: 100px 0;
-    // &__block {
-
-    // }
     &__item {
         padding: 20px 10px 20px 20px;
         cursor: pointer;
@@ -96,4 +93,36 @@
     }
 
 
+}
+
+@media (max-width: 425px ) {
+    .question-answer {
+        padding: 50px 0;
+        .main {
+            &__title {
+                font-size: 30px;
+                margin-bottom: 60px;
+            }
+        }
+        &__title {
+            font-size: 14px;
+        }
+        &__text {
+            font-size: 12px;
+        }
+        &__title:before,
+        &__title:after {
+            content: '';
+            width: 6px;
+            height: 1px;
+        }
+        &__title:before {
+           
+            right: 5px;
+        }
+        &__item--active &__title:before {
+            
+            right: 4px;
+        }
+    }
 }

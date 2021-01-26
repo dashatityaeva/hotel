@@ -1599,4 +1599,31 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
 .question-answer__item--active .question-answer__text {
   display: block;
 }
+
+@media (max-width: 425px) {
+  .question-answer {
+    padding: 50px 0;
+  }
+  .question-answer .main__title {
+    font-size: 30px;
+    margin-bottom: 60px;
+  }
+  .question-answer__title {
+    font-size: 14px;
+  }
+  .question-answer__text {
+    font-size: 12px;
+  }
+  .question-answer__title:before, .question-answer__title:after {
+    content: '';
+    width: 6px;
+    height: 1px;
+  }
+  .question-answer__title:before {
+    right: 5px;
+  }
+  .question-answer__item--active .question-answer__title:before {
+    right: 4px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
