@@ -1,0 +1,103 @@
+.question-answer {
+    padding: 100px 0;
+    // &__block {
+
+    // }
+    &__item {
+        padding: 20px 10px 20px 20px;
+        cursor: pointer;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #000;
+        }
+    }
+
+    &__title {
+        font-family: 'Oranienbaum Regular', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        letter-spacing: 0.17em;
+        text-transform: uppercase;
+        position: relative;
+
+
+    }
+
+    &__title:before,
+    &__title:after {
+        content: '';
+        width: 12px;
+        height: 2px;
+        background-color: #000000;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transition: all 0.3s ease 0s;
+
+    }
+
+
+    &__title:before {
+        transform: rotate(30deg);
+        right: 10px;
+    }
+
+    &__title::after {
+        transform: rotate(-30deg);
+        right: 0;
+    }
+
+    &__item.active &__title:before,
+    &__item.active &__title:after {
+        background-image: linear-gradient(180deg, #EBFF00 0%, #FF8A00 100%);
+    }
+
+    &__item.active &__title:before {
+        transform: rotate(-40deg);
+        right: 7px;
+    }
+
+    &__item.active &__title:after {
+        transform: rotate(40deg);
+    }
+
+    &__text {
+        display: none;
+        font-family: 'PlayfairDisplay Regular', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 1.26;
+        text-align: justify;
+        letter-spacing: 0.17em;
+        padding-top: 12px;
+    }
+    &__text ul li {
+        position: relative;
+        &:before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            top: 40%;
+            left: -18px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: linear-gradient(180deg, #EBFF00 0%, #FF8A00 100%);
+        }
+    }
+    
+    
+
+    &__item.active &__text {
+        display: block;
+    }
+
+    &__text-active {
+        display: block;
+    }
+
+
+
+}

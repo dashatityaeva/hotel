@@ -1501,4 +1501,105 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
     line-height: 1.36;
   }
 }
+
+.question-answer {
+  padding: 100px 0;
+}
+
+.question-answer__item {
+  padding: 20px 10px 20px 20px;
+  cursor: pointer;
+}
+
+.question-answer__item:not(:last-child) {
+  border-bottom: 1px solid #000;
+}
+
+.question-answer__title {
+  font-family: 'Oranienbaum Regular', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.question-answer__title:before, .question-answer__title:after {
+  content: '';
+  width: 12px;
+  height: 2px;
+  background-color: #000000;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.question-answer__title:before {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  right: 10px;
+}
+
+.question-answer__title::after {
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  right: 0;
+}
+
+.question-answer__item.active .question-answer__title:before,
+.question-answer__item.active .question-answer__title:after {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#EBFF00), to(#FF8A00));
+  background-image: linear-gradient(180deg, #EBFF00 0%, #FF8A00 100%);
+}
+
+.question-answer__item.active .question-answer__title:before {
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+  right: 7px;
+}
+
+.question-answer__item.active .question-answer__title:after {
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+.question-answer__text {
+  display: none;
+  font-family: 'PlayfairDisplay Regular', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 1.26;
+  text-align: justify;
+  letter-spacing: 0.17em;
+  padding-top: 12px;
+}
+
+.question-answer__text ul li {
+  position: relative;
+}
+
+.question-answer__text ul li:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  left: -18px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#EBFF00), to(#FF8A00));
+  background: linear-gradient(180deg, #EBFF00 0%, #FF8A00 100%);
+}
+
+.question-answer__item.active .question-answer__text {
+  display: block;
+}
+
+.question-answer__text-active {
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */
