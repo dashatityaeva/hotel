@@ -20,6 +20,7 @@
         letter-spacing: 0.17em;
         text-transform: uppercase;
         position: relative;
+        padding-right: 25px;
 
 
     }
@@ -48,17 +49,17 @@
         right: 0;
     }
 
-    &__item.active &__title:before,
-    &__item.active &__title:after {
+    &__item--active &__title:before,
+    &__item--active &__title:after {
         background-image: linear-gradient(180deg, #EBFF00 0%, #FF8A00 100%);
     }
 
-    &__item.active &__title:before {
+    &__item--active &__title:before {
         transform: rotate(-40deg);
         right: 7px;
     }
 
-    &__item.active &__title:after {
+    &__item--active &__title:after {
         transform: rotate(40deg);
     }
 
@@ -90,14 +91,9 @@
     
     
 
-    &__item.active &__text {
+    &__item--active &__text {
         display: block;
     }
-
-    &__text-active {
-        display: block;
-    }
-
 
 
 }

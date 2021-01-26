@@ -54,3 +54,13 @@ const selectCountry = function () {
 
 selectCountry();
 /////custom select with img/////////
+
+///////////////accordion/////////////////
+const item = document.querySelectorAll('.question-answer__item');
+
+item.forEach(item => {
+    item.addEventListener('click', function () {
+       this.classList.toggle("question-answer__item--active");
+    })
+})
+///////////////accordion/////////////////

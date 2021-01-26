@@ -1523,6 +1523,7 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
   letter-spacing: 0.17em;
   text-transform: uppercase;
   position: relative;
+  padding-right: 25px;
 }
 
 .question-answer__title:before, .question-answer__title:after {
@@ -1549,19 +1550,19 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
   right: 0;
 }
 
-.question-answer__item.active .question-answer__title:before,
-.question-answer__item.active .question-answer__title:after {
+.question-answer__item--active .question-answer__title:before,
+.question-answer__item--active .question-answer__title:after {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#EBFF00), to(#FF8A00));
   background-image: linear-gradient(180deg, #EBFF00 0%, #FF8A00 100%);
 }
 
-.question-answer__item.active .question-answer__title:before {
+.question-answer__item--active .question-answer__title:before {
   -webkit-transform: rotate(-40deg);
           transform: rotate(-40deg);
   right: 7px;
 }
 
-.question-answer__item.active .question-answer__title:after {
+.question-answer__item--active .question-answer__title:after {
   -webkit-transform: rotate(40deg);
           transform: rotate(40deg);
 }
@@ -1595,11 +1596,7 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
   background: linear-gradient(180deg, #EBFF00 0%, #FF8A00 100%);
 }
 
-.question-answer__item.active .question-answer__text {
-  display: block;
-}
-
-.question-answer__text-active {
+.question-answer__item--active .question-answer__text {
   display: block;
 }
 /*# sourceMappingURL=style.css.map */
