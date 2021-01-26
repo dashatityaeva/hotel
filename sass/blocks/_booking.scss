@@ -344,6 +344,7 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
 
 @media (max-width: 425px) {
     .booking {
+        padding: 50px 0;
         &__description {
             font-size: 18px;
             margin-bottom: 30px;
