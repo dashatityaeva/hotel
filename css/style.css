@@ -1460,4 +1460,19 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
     margin-bottom: 60px;
   }
 }
+
+.information {
+  padding: 100px 0;
+}
+
+.information__subtitle, .information__content {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 1.33;
+  text-align: justify;
+  letter-spacing: 0.18em;
+  color: #000000;
+  margin-bottom: 38px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,14 @@
+.information {
+    padding: 100px 0;
+
+    &__subtitle, &__content {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 1.33;
+        text-align: justify;
+        letter-spacing: 0.18em;
+        color: $main-color-text;
+        margin-bottom: 38px;
+    }
+}
