@@ -79,6 +79,20 @@ p, h1, h2, h3, h4, ul {
 .nav-toggle {
     display: none;
 }
+.main {
+    &__title {
+        font-family: 'Oranienbaum Regular', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 64px;
+        line-height: 1.26;
+        text-align: center;
+        letter-spacing: 0.17em;
+        text-transform: uppercase;
+        color: $main-color-text;
+        margin-bottom: 100px;
+    }
+}
 @media (max-width: 375px) {
     btn {
         font-size: 14px;

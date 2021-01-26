@@ -9,7 +9,7 @@
     <link rel="preload" href="fonts/Oranienbaum-Regular.woff" as="font">
     <link rel="preload" href="fonts/PlayfairDisplay-Regular.woff" as="font">
     <link rel="stylesheet" href="css/style.css">
-   
+
 </head>
 
 <body>
@@ -72,8 +72,70 @@
             </div>
         </div>
     </header>
+    <main class="main">
+        <section class="booking">
+            <div class="container">
+                <h2 class="main__title">Бронирование номеров</h2>
+                <p class="booking__description">Выберите даты заезда, выезда и количество гостей</p>
+                <form class="form" action="">
+                    <div class="form__wrap">
+                        <div class="form__main">
+                            <div class="form__date-interval">
+                                <div class="form__date-in">
+                                    <label class="form__lable" for="calendar-check-in">Дата заезда</label>
+                                    <input class="form__calendar" type="date" value="" name="calendar-check-in"
+                                        id="calendar-check-in">
+                                </div>
+                                <div class="form__date-out">
+                                    <label class="form__lable" for="calendar-check-out">Дата отъезда</label>
+                                    <input class="form__calendar" type="date" data-date=""
+                                        data-date-format="DD MMMM YYYY" value="" name="calendar-check-out"
+                                        id="calendar-check-out">
+                                </div>
+                            </div>
+                            <div class="form__accommodation">
+                                <span class="form__lable">Размещение в номере</span>
+                                <div class="form__wrap-accommodation">
+                                    <div class="form__select-persons">
+                                        <select class="form__persons" name="">
+                                            <option selected value="1">1 взрослый</option>
+                                            <option value="1">2 взрослыx</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__input">
+                                        <input class="form__children" type="text" placeholder="Добавить детей">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__aside">
+                            <div class="select-country">
+                                <div class="select-country__header">
+                                    <span class="select-country__current"><img src="img/Russia.svg" alt=""></span>
+                                </div>
+                                <div class="select-country__body">
+                                    <div class="select-country__item"><img src="img/Russia.svg" alt=""></div>
+                                    <div class="select-country__item"><img src="https://w7.pngwing.com/pngs/462/3/png-transparent-computer-icons-country-music-musical-instruments-harmonica-musical-instruments-heart-share-icon-music-download.png" alt=""></div>
+                                    <div class="select-country__item"><img src="https://img.pngio.com/the-best-free-country-icon-images-download-from-1533-free-icons-icon-country-png-512_512.png" alt=""></div>
+                                </div>
+                            </div>
 
-    <script  src="js/script.js"></script>
+                            <div class="select-currency">
+                                <select class="select-currency__currencies" name="">
+                                    <option class="select-currency__currency" selected value="RUB">RUB</option>
+                                    <option class="select-currency__currency" value="USD">USD</option>
+                                    <option class="select-currency__currency" value="EUR">EUR</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="" class="btn form__btn">Найти</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js" async></script>
 </body>
 
 </html>

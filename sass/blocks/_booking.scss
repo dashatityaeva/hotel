@@ -1,0 +1,391 @@
+.booking {
+    padding-top: 200px;
+    padding-bottom: 100px;
+
+    &__description {
+        font-size: 30px;
+        line-height: 1.26;
+        letter-spacing: 0.17em;
+        color: $main-color-text;
+        margin-bottom: 82px;
+    }
+}
+
+.form {
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    // &__main {
+    //     width: 70%;
+    // }
+    &__calendar {
+        width: 440px;
+        min-width: 280px;
+        //width: 100%;
+        height: 58px;
+        border: 1px solid $main-color-text;
+        -webkit-appearance: none;
+        appearance: none;
+        padding-left: 17px;
+    }
+
+    &__date-in {
+        margin-right: 40px;
+    }
+
+    &__date-interval {
+        margin-bottom: 50px;
+    }
+
+    &__date-interval,
+    &__wrap-accommodation {
+        display: flex;
+
+
+    }
+
+    &__date-in,
+    &__date-out,
+    &__select-persons,
+    &__input {
+        display: flex;
+        flex-direction: column;
+        width: 440px;
+    }
+
+    &__lable {
+        display: block;
+        font-size: 24px;
+        line-height: 1.26;
+        letter-spacing: 0.17em;
+        color: $main-color-text;
+        margin-bottom: 20px;
+    }
+
+    &__select-persons {
+        display: flex;
+        width: 440px;
+        position: relative;
+        display: inline-block;
+        margin-right: 40px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 25%;
+            left: 14px;
+            background-image: url(../img/user.svg);
+            background-size: contain;
+            width: 30px;
+            height: 30px;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            top: 50%;
+            right: 25px;
+            background-image: url(../img/arrow-select.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 19px;
+            height: 9px;
+        }
+    }
+
+    &__persons {
+        width: 440px;
+        min-width: 280px;
+        height: 58px;
+        border: 1px solid $main-color-text;
+        appearance: none;
+        padding: 15px 60px 15px 58px;
+    }
+
+    &__input {
+        position: relative;
+
+        &:before {
+            content: '';
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 25%;
+            left: 14px;
+            background-image: url(../img/addition.svg)
+        }
+    }
+
+    &__children {
+        width: 440px;
+        min-width: 280px;
+        height: 58px;
+        border: 1px solid $main-color-text;
+        appearance: none;
+        padding: 15px 15px 15px 58px;
+
+        &::placeholder {
+            color: inherit
+        }
+    }
+
+    &__aside {
+        margin-left: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__btn {
+        color: $main-color-text;
+        padding: 19px 112px;
+        display: flex;
+        margin: 0 auto;
+    }
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-position: center;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    padding-right: 14px;
+}
+
+input[name="calendar-check-in"]::-webkit-calendar-picker-indicator {
+    background-image: url(../img/calendar-in.svg);
+}
+
+input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
+    background-image: url(../img/calendar-out.svg);
+}
+
+/* custom select with img */
+.select-country.is-active .select-country__body {
+    display: block;
+}
+
+.select-country {
+    position: relative;
+    margin-bottom: 21px;
+
+    &__header {
+        width: 200px;
+        height: 58px;
+        border: 1px solid #000000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__current {
+        width: 100%;
+        position: relative;
+    }
+
+    &__current:after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        top: 40%;
+        right: 25px;
+        background-image: url(../img/arrow-select.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 19px;
+        height: 9px;
+    }
+
+    &__current img {
+        width: 70px;
+        height: 38px;
+        padding-left: 8px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__body {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        border: 1px solid #000000;
+        border-top: none;
+        width: 200px;
+        z-index: 4;
+        background-color: #fff;
+    }
+
+    &__item {
+        padding-left: 8px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item img {
+        width: 70px;
+        height: 38px;
+    }
+
+    &__item:hover {
+        background-color: rgb(235, 233, 233);
+    }
+}
+
+/* custom select with img */
+.select-currency {
+    position: relative;
+    display: inline-block;
+
+    &:after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        top: 50%;
+        right: 25px;
+        background-image: url(../img/arrow-select.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 19px;
+        height: 9px;
+    }
+
+    &__currencies {
+        width: 200px;
+        height: 58px;
+        border: 1px solid #000000;
+        appearance: none;
+        padding: 16px 0px 16px 16px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .form {
+        &__wrap {
+            flex-direction: column-reverse;
+        }
+
+        &__aside {
+            margin-left: 0;
+            margin-bottom: 50px;
+        }
+
+        &__date-in,
+        &__date-out,
+        &__select-persons,
+        &__input {
+            width: 50%;
+        }
+
+        &__calendar,
+        &__persons,
+        &__children {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 1180px) {
+    .booking {
+        padding-top: 70px;
+
+        &__description {
+            font-size: 25px;
+            margin-bottom: 40px;
+
+        }
+
+        .main {
+            &__title {
+                font-size: 35px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    .form {
+
+        &__date-in,
+        &__select-persons {
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+
+        &__date-interval,
+        &__wrap-accommodation {
+            flex-wrap: wrap;
+        }
+
+        &__date-in,
+        &__date-out,
+        &__select-persons,
+        &__input {
+            width: 100%;
+        }
+
+        &__aside {
+            display: flex;
+            flex-direction: row;
+        }
+
+    }
+
+    .select-country {
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .booking {
+        &__description {
+            font-size: 18px;
+            margin-bottom: 30px;
+
+        }
+
+        .main {
+            &__title {
+                font-size: 30px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    .form {
+        &__aside {
+            margin-bottom: 30px;
+        }
+        &__btn {
+            padding: 19px 80px;
+        }
+        &__lable {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        &__date-interval {
+            margin-bottom: 30px;
+        }
+
+    }
+
+    .select-country {
+
+        &__header,
+        &__body {
+            width: 125px;
+        }
+    }
+
+    .select-currency {
+        &__currencies {
+            width: 125px;
+        }
+    }
+}

@@ -428,6 +428,19 @@ p, h1, h2, h3, h4, ul {
   display: none;
 }
 
+.main__title {
+  font-family: 'Oranienbaum Regular', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 1.26;
+  text-align: center;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 100px;
+}
+
 @media (max-width: 375px) {
   btn {
     font-size: 14px;
@@ -607,6 +620,11 @@ p, h1, h2, h3, h4, ul {
 
 .socials__item:not(:last-child) {
   margin-bottom: 44px;
+}
+
+.socials__item:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .down {
@@ -840,6 +858,407 @@ p, h1, h2, h3, h4, ul {
   }
   .menu-active .nav {
     padding-top: 50px;
+  }
+}
+
+.booking {
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+
+.booking__description {
+  font-size: 30px;
+  line-height: 1.26;
+  letter-spacing: 0.17em;
+  color: #000000;
+  margin-bottom: 82px;
+}
+
+.form__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.form__calendar {
+  width: 440px;
+  min-width: 280px;
+  height: 58px;
+  border: 1px solid #000000;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  padding-left: 17px;
+}
+
+.form__date-in {
+  margin-right: 40px;
+}
+
+.form__date-interval {
+  margin-bottom: 50px;
+}
+
+.form__date-interval, .form__wrap-accommodation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__date-in, .form__date-out, .form__select-persons, .form__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 440px;
+}
+
+.form__lable {
+  display: block;
+  font-size: 24px;
+  line-height: 1.26;
+  letter-spacing: 0.17em;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.form__select-persons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 440px;
+  position: relative;
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.form__select-persons:before {
+  content: '';
+  position: absolute;
+  top: 25%;
+  left: 14px;
+  background-image: url(../img/user.svg);
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
+
+.form__select-persons:after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  right: 25px;
+  background-image: url(../img/arrow-select.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 19px;
+  height: 9px;
+}
+
+.form__persons {
+  width: 440px;
+  min-width: 280px;
+  height: 58px;
+  border: 1px solid #000000;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 15px 60px 15px 58px;
+}
+
+.form__input {
+  position: relative;
+}
+
+.form__input:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 25%;
+  left: 14px;
+  background-image: url(../img/addition.svg);
+}
+
+.form__children {
+  width: 440px;
+  min-width: 280px;
+  height: 58px;
+  border: 1px solid #000000;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 15px 15px 15px 58px;
+}
+
+.form__children::-webkit-input-placeholder {
+  color: inherit;
+}
+
+.form__children:-ms-input-placeholder {
+  color: inherit;
+}
+
+.form__children::-ms-input-placeholder {
+  color: inherit;
+}
+
+.form__children::placeholder {
+  color: inherit;
+}
+
+.form__aside {
+  margin-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form__btn {
+  color: #000000;
+  padding: 19px 112px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background-position: center;
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  padding-right: 14px;
+}
+
+input[name="calendar-check-in"]::-webkit-calendar-picker-indicator {
+  background-image: url(../img/calendar-in.svg);
+}
+
+input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
+  background-image: url(../img/calendar-out.svg);
+}
+
+/* custom select with img */
+.select-country.is-active .select-country__body {
+  display: block;
+}
+
+.select-country {
+  position: relative;
+  margin-bottom: 21px;
+}
+
+.select-country__header {
+  width: 200px;
+  height: 58px;
+  border: 1px solid #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.select-country__current {
+  width: 100%;
+  position: relative;
+}
+
+.select-country__current:after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: 40%;
+  right: 25px;
+  background-image: url(../img/arrow-select.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 19px;
+  height: 9px;
+}
+
+.select-country__current img {
+  width: 70px;
+  height: 38px;
+  padding-left: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.select-country__body {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  border: 1px solid #000000;
+  border-top: none;
+  width: 200px;
+  z-index: 4;
+  background-color: #fff;
+}
+
+.select-country__item {
+  padding-left: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.select-country__item img {
+  width: 70px;
+  height: 38px;
+}
+
+.select-country__item:hover {
+  background-color: #ebe9e9;
+}
+
+/* custom select with img */
+.select-currency {
+  position: relative;
+  display: inline-block;
+}
+
+.select-currency:after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  right: 25px;
+  background-image: url(../img/arrow-select.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 19px;
+  height: 9px;
+}
+
+.select-currency__currencies {
+  width: 200px;
+  height: 58px;
+  border: 1px solid #000000;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 16px 0px 16px 16px;
+}
+
+@media (max-width: 1180px) {
+  .form__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .form__aside {
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+  .form__date-in, .form__date-out, .form__select-persons, .form__input {
+    width: 50%;
+  }
+  .form__calendar, .form__persons, .form__children {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1180px) {
+  .booking {
+    padding-top: 70px;
+  }
+  .booking__description {
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
+  .booking .main__title {
+    font-size: 35px;
+    margin-bottom: 50px;
+  }
+  .form__date-in, .form__select-persons {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .form__date-interval, .form__wrap-accommodation {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .form__date-in, .form__date-out, .form__select-persons, .form__input {
+    width: 100%;
+  }
+  .form__aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .select-country {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .booking__description {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .booking .main__title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .form__aside {
+    margin-bottom: 30px;
+  }
+  .form__btn {
+    padding: 19px 80px;
+  }
+  .form__lable {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .form__date-interval {
+    margin-bottom: 30px;
+  }
+  .select-country__header, .select-country__body {
+    width: 125px;
+  }
+  .select-currency__currencies {
+    width: 125px;
   }
 }
 /*# sourceMappingURL=style.css.map */
