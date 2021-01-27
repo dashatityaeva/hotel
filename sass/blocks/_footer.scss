@@ -1,0 +1,15 @@
+.footer {
+    background-color: #000000;
+    &__wrap {
+        height: 253px;
+    }
+    .navigation-block {
+        top: 0;
+        height: inherit;
+        align-items: center;
+    }
+    .nav__item-list_active-top:after {
+        transform: rotate(180deg);
+    }
+}
+

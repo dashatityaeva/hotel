@@ -1731,4 +1731,25 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
     margin-right: 15px;
   }
 }
+
+.footer {
+  background-color: #000000;
+}
+
+.footer__wrap {
+  height: 253px;
+}
+
+.footer .navigation-block {
+  top: 0;
+  height: inherit;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .nav__item-list_active-top:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
 /*# sourceMappingURL=style.css.map */
