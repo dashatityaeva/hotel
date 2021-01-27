@@ -24,6 +24,7 @@ toggleBtn.addEventListener('click', function(e) {
     menuActive.classList.toggle('menu-active');
     socialsActive.classList.toggle('header__socials-active');
     container.classList.toggle('none-padding');
+    document.body.classList.toggle('hidden');
 });
 ////////////burger////////////////////
 

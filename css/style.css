@@ -449,6 +449,10 @@ p, h1, h2, h3, h4, ul {
   }
 }
 
+.hidden {
+  overflow: hidden;
+}
+
 .header {
   background-color: #362f2f;
   background-repeat: no-repeat;
@@ -1229,7 +1233,7 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 440px) {
   .booking {
     padding: 50px 0;
   }
@@ -1691,6 +1695,10 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
 }
 
 @media (max-width: 768px) {
+  .contacts {
+    padding: 0;
+    padding-top: 50px;
+  }
   .contacts__wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1703,9 +1711,6 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
 }
 
 @media (max-width: 425px) {
-  .contacts {
-    padding: 50px 0;
-  }
   .contacts .main__title {
     font-size: 30px;
     margin-bottom: 60px;
@@ -1734,6 +1739,7 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
 
 .footer {
   background-color: #000000;
+  padding: 20px;
 }
 
 .footer__wrap {
@@ -1751,5 +1757,43 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
 .footer .nav__item-list_active-top:after {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+@media (max-width: 1330px) {
+  .footer .square {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer .nav {
+    display: none;
+  }
+  .footer .logo, .footer .lang-switcher, .footer .main-number {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__wrap {
+    height: 186px;
+  }
+  .footer .logo {
+    width: 50%;
+  }
+  .footer .lang-switcher {
+    width: 50%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .footer .main-number {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
