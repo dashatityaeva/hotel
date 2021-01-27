@@ -1,0 +1,16 @@
+.header-room {
+    padding-bottom: 200px;
+    background-color: #ffffff;
+
+    .logo {
+        color: #000000;
+    }
+
+    .nav {
+        &__item {
+            &-link {
+                color: $main-color-text;
+            }
+        }
+    }
+}
