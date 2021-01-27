@@ -1689,4 +1689,46 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
 .socials-nw__item:not(:last-child) {
   margin-right: 47px;
 }
+
+@media (max-width: 768px) {
+  .contacts__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contacts__map, .contacts__content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .contacts {
+    padding: 50px 0;
+  }
+  .contacts .main__title {
+    font-size: 30px;
+    margin-bottom: 60px;
+  }
+  .contacts__address {
+    font-size: 18px;
+  }
+  .contacts__map {
+    height: 400px;
+    overflow: hidden;
+  }
+  .contacts__content {
+    padding: 0 10px 47px 10px;
+  }
+  .socials-nw__text {
+    font-size: 14px;
+  }
+  .socials-nw__item {
+    width: 20px;
+    height: 20px;
+  }
+  .socials-nw__item:not(:last-child) {
+    margin-right: 15px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
