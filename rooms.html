@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="preload" href="fonts/PlayfairDisplay-Regular.woff" as="font">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header class="header-room">
         <div class="header-room__wrapper">
@@ -20,14 +22,14 @@
 
                         <nav class="nav ">
                             <ul class="nav__item">
-                                <li class="nav__item-list nav__item-list_active-top">
-                                    <a href="#" class="nav__item-link">Главная</a>
+                                <li class="nav__item-list ">
+                                    <a href="index.html" class="nav__item-link">Главная</a>
                                 </li>
                                 <li class="nav__item-list">
                                     <a href="#booking" class="nav__item-link">Бронь</a>
                                 </li>
-                                <li class="nav__item-list">
-                                    <a href="#hotel-rooms" class="nav__item-link">Номера</a>
+                                <li class="nav__item-list nav__item-list_active-top">
+                                    <a href="#hotel-rooms " class="nav__item-link">Номера</a>
                                 </li>
                                 <li class="nav__item-list">
                                     <a href="#information" class="nav__item-link">Информация</a>
@@ -46,15 +48,221 @@
     </header>
     <main class="main-room">
         <h1 class="main__title">Номера</h1>
-        <div class="maim-room__wrap">
-            <aside class="aside-room__booking">fvfv</aside>
-            <section class="main-room__apartment"></section>
-        </div>
-        
-     
-    </main>
+        <div class="main-room__wrap">
+                <div class="main-room__booking-wrap">
+                    <aside class="main-room__booking">
+                        <h2 class="main-room__title">Бронирование номеров</h2>
+                        <p class="main-room__description">Выберите даты заезда, выезда и количество гостей</p>
+                        <form class="form" action="">
+                            <div class="form__wrap">
+                                <div class="form__main">
+                                    <div class="form__date-interval">
+                                        <div class="form__date-in">
+                                            <label class="form__lable" for="calendar-check-in">Дата заезда</label>
+                                            <input class="form__calendar" type="date" value="" name="calendar-check-in"
+                                                id="calendar-check-in">
+                                        </div>
+                                        <div class="form__date-out">
+                                            <label class="form__lable" for="calendar-check-out">Дата отъезда</label>
+                                            <input class="form__calendar" type="date" data-date=""
+                                                data-date-format="DD MMMM YYYY" value="" name="calendar-check-out"
+                                                id="calendar-check-out">
+                                        </div>
+                                    </div>
+                                    <div class="form__accommodation">
+                                        <span class="form__lable">Размещение в номере</span>
+                                        <div class="form__wrap-accommodation">
+                                            <div class="form__select-persons">
+                                                <select class="form__persons" name="">
+                                                    <option selected value="1">1 взрослый</option>
+                                                    <option value="1">2 взрослыx</option>
+                                                </select>
+                                            </div>
+                                            <div class="form__input">
+                                                <input class="form__children" type="text" placeholder="Добавить детей">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__aside">
+                                    <div class="select-country">
+                                        <div class="select-country__header">
+                                            <span class="select-country__current"><img src="img/Russia.svg" alt=""></span>
+                                        </div>
+                                        <div class="select-country__body">
+                                            <div class="select-country__item"><img src="img/Russia.svg" alt=""></div>
+                                            <div class="select-country__item"><img
+                                                    src="https://w7.pngwing.com/pngs/462/3/png-transparent-computer-icons-country-music-musical-instruments-harmonica-musical-instruments-heart-share-icon-music-download.png"
+                                                    alt=""></div>
+                                            <div class="select-country__item"><img
+                                                    src="https://img.pngio.com/the-best-free-country-icon-images-download-from-1533-free-icons-icon-country-png-512_512.png"
+                                                    alt=""></div>
+                                        </div>
+                                    </div>
     
+                                    <div class="select-currency">
+                                        <select class="select-currency__currencies" name="">
+                                            <option class="select-currency__currency" selected value="RUB">RUB</option>
+                                            <option class="select-currency__currency" value="USD">USD</option>
+                                            <option class="select-currency__currency" value="EUR">EUR</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="" class="btn form__btn">Найти</button>
+                        </form>
+                        <div class="main-room__category">
+                            <h2 class="main-room__title">Категории номеров</h2>
+                            
+                        </div>
+                    </aside>
+                </div>
+           
+            <section class="main-room__apartment">
+                <div class="main-room__group">
+                    <div class="main-room__item">
+                        <div class="main-room__img">
+                            <img src="img/room1.png" alt="">
+                        </div>
+                        <div class="main-room__content">
+                            <h3 class="main-room__name">Номер <br><span>Комфорт «Севастополь»</span></h3>
+                            <div class="main-room__description">
+                                <p>
+                                    Курортный отель «Севастополь» с обслуживанием по системе «все включено» находится в
+                                    900 метрах от побережья Черного моря. Прогулка до пляжа занимает 20 минут. Для
+                                    гостей организуют трансфер до пляжа.
+                                </p>
+                                <p>
+                                    Номера с сейфом оборудованы кондиционером, холодильником и телевизором с плоским
+                                    экраном. Из некоторых номеров можно выйти на террасу или балкон. Собственная ванная
+                                    комната укомплектована халатами, тапочками и бесплатными туалетно-косметическими
+                                    принадлежностями.
+                                </p>
+                            </div>
+                            <div class="main-room__group-btn">
+                                <a href="#" class="btn main-room__btn-more">Подробнее</a>
+                                <button class="btn main-room__btn-booking">Забронировать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-room__item">
+                        <div class="main-room__img">
+                            <img src="img/room2.png" alt="">
+                        </div>
+                        <div class="main-room__content">
+                            <h3 class="main-room__name">Номер <br><span>Люкс «Голубая лагуна»</span></h3>
+                            <div class="main-room__description">
+                                <p>
+                                    В самом центре Анапы расположено здание гостиницы «Голубая лагуна». Забронировать
+                                    номер в отеле могут не только семьи, но и большие группы отдыхающих. Здесь есть
+                                    бесплатная парковка и WIiFi.
+                                </p>
+                                <p>
+                                    От гостиницы «Голубая лагуна» в Анапе можно быстро дойти до Храма святого Онуфрия
+                                    Великого и Ворот турецкой крепости. Поблизости находятся археологический музей и
+                                    Маяк. На карте «Голубая лагуна» окружена санаториями и пансионатами курорта.
+                                    Комфортабельные номера с балконами оборудованы санузлами с ванными или душевыми
+                                    кабинами.
+                                </p>
+                            </div>
+                            <div class="main-room__group-btn">
+                                <a href="#" class="btn main-room__btn-more">Подробнее</a>
+                                <button class="btn main-room__btn-booking">Забронировать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-room__item">
+                        <div class="main-room__img">
+                            <img src="img/room3.png" alt="">
+                        </div>
+                        <div class="main-room__content">
+                            <h3 class="main-room__name">Номер <br><span>"Домашнее тепло"</span></h3>
+                            <div class="main-room__description">
+                                <p>
+                                    Апартаменты «Домашнее тепло» с балконом и видом на город расположены в Великом
+                                    Новгороде, Новгородской области. На всей территории работает бесплатный Wi-Fi
+                                </p>
+                                <p>
+                                    В апартаментах есть 1 спальня, телевизор с плоским экраном и спутниковыми каналами,
+                                    оборудованная кухня с микроволновой печью и холодильником, стиральная машина и 1
+                                    ванная комната с душем.
+                                </p>
+                                <p>
+                                    Любители активного отдыха могут отправиться в пеший поход по окрестностям.
+                                </p>
+                                <p>Парам особенно нравится расположение наших апартаментов!</p>
+                            </div>
+                            <div class="main-room__group-btn">
+                                <a href="#" class="btn main-room__btn-more">Подробнее</a>
+                                <button class="btn main-room__btn-booking">Забронировать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-room__item">
+                        <div class="main-room__img">
+                            <img src="img/room4.png" alt="">
+                        </div>
+                        <div class="main-room__content">
+                            <h3 class="main-room__name">Номер <br><span>"Домашний уют"</span></h3>
+                            <div class="main-room__description">
+                                <p>
+                                    Апартаменты «Домашнее тепло» с балконом и видом на город расположены в Великом
+                                    Новгороде, Новгородской области. На всей территории работает бесплатный Wi-Fi
+                                </p>
+                                <p>
+                                    В апартаментах есть 1 спальня, телевизор с плоским экраном и спутниковыми каналами,
+                                    оборудованная кухня с микроволновой печью и холодильником, стиральная машина и 1
+                                    ванная комната с душем.
+                                </p>
+                                <p>
+                                    Любители активного отдыха могут отправиться в пеший поход по окрестностям.
+                                </p>
+                                <p>Парам особенно нравится расположение наших апартаментов!</p>
+                            </div>
+                            <div class="main-room__group-btn">
+                                <a href="#" class="btn main-room__btn-more">Подробнее</a>
+                                <button class="btn main-room__btn-booking">Забронировать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-room__item">
+                        <div class="main-room__img">
+                            <img src="img/room5.png" alt="">
+                        </div>
+                        <div class="main-room__content">
+                            <h3 class="main-room__name">Номер <br><span>«Речная»</span></h3>
+                            <div class="main-room__description">
+                                <p>
+                                    Апартаменты «Домашнее тепло» с балконом и видом на город расположены в Великом
+                                    Новгороде, Новгородской области. На всей территории работает бесплатный Wi-Fi
+                                </p>
+                                <p>
+                                    В апартаментах есть 1 спальня, телевизор с плоским экраном и спутниковыми каналами,
+                                    оборудованная кухня с микроволновой печью и холодильником, стиральная машина и 1
+                                    ванная комната с душем.
+                                </p>
+                                <p>
+                                    Любители активного отдыха могут отправиться в пеший поход по окрестностям.
+                                </p>
+                                <p>Парам особенно нравится расположение наших апартаментов!</p>
+                            </div>
+                            <div class="main-room__group-btn">
+                                <a href="#" class="btn main-room__btn-more">Подробнее</a>
+                                <button class="btn main-room__btn-booking">Забронировать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+    </main>
+
 
     <script src="js/script.js"></script>
 </body>
+
 </html>

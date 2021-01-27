@@ -1809,4 +1809,219 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
 .header-room .nav__item-link {
   color: #000000;
 }
+
+.main-room__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-room__booking-wrap {
+  width: 30%;
+  border: 1px solid red;
+  padding-left: 100px;
+  padding-right: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main-room__booking {
+  max-width: 330px;
+}
+
+.main-room__booking--fixed {
+  margin-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.main-room__apartment {
+  width: 70%;
+  border: 1px solid red;
+}
+
+.main-room__title {
+  font-family: 'Oranienbaum Regular', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 1.26;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.main-room__description {
+  font-size: 18px;
+  line-height: 1.26;
+  letter-spacing: 0.17em;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.main-room .form {
+  max-width: 320px;
+  margin-bottom: 50px;
+}
+
+.main-room .form__lable {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.main-room .form__date-in, .main-room .form__select-persons {
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+.main-room .form__date-interval {
+  margin-bottom: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-room .form__wrap-accommodation {
+  margin-bottom: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-room .form__date-in, .main-room .form__date-out, .main-room .form__select-persons, .main-room .form__input {
+  max-width: 320px;
+  width: 100%;
+}
+
+.main-room .form__aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-room .form__calendar, .main-room .form__persons, .main-room .form__children {
+  width: 100%;
+}
+
+.main-room .form .select-country {
+  margin-right: 30px;
+  margin-bottom: 0;
+}
+
+.main-room .select-country__header, .main-room .select-country__body {
+  width: auto;
+  min-width: 145px;
+}
+
+.main-room .select-currency__currencies {
+  width: auto;
+  min-width: 145px;
+}
+
+.main-room__item {
+  margin-bottom: 200px;
+}
+
+.main-room__item:not(:first-child) {
+  margin-top: 100px;
+}
+
+.main-room__img {
+  width: 100%;
+  min-height: 539px;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-room__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.main-room__content {
+  background-color: #ffffff;
+  max-width: 942px;
+  margin: -100px auto 0;
+  position: relative;
+  padding-top: 34px;
+}
+
+.main-room__name {
+  font-family: 'Oranienbaum Regular', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1.26;
+  text-align: center;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+.main-room__description {
+  margin-bottom: 50px;
+}
+
+.main-room__description p {
+  font-family: 'PlayfairDisplay Regular', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.26;
+  text-align: center;
+  letter-spacing: 0.17em;
+  color: #000000;
+}
+
+.main-room__description p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.main-room__group-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-room__btn-more {
+  border: 1px solid #000000;
+  margin-right: 40px;
+  padding: 19px 40px;
+  color: #000000;
+}
+
+.main-room__btn-booking {
+  color: #000000;
+  padding: 19px 40px;
+}
 /*# sourceMappingURL=style.css.map */

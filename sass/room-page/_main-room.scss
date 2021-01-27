@@ -1,0 +1,211 @@
+.main-room {
+    &__wrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+ 
+    &__booking-wrap {
+        width: 30%;
+        border: 1px solid red;
+        padding-left: 100px;
+        padding-right: 17px;
+        display: flex;
+        justify-content: flex-end;
+       
+    }
+    &__booking {
+        max-width: 330px;
+    }
+    &__booking--fixed {
+        margin-top: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    &__apartment {
+        width: 70%;
+        border: 1px solid red;
+    }
+
+    &__title {
+        font-family: 'Oranienbaum Regular', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 1.26;
+        letter-spacing: 0.17em;
+        text-transform: uppercase;
+        color: $main-color-text;
+        margin-bottom: 25px;
+    }
+
+    &__description {
+        font-size: 18px;
+        line-height: 1.26;
+        letter-spacing: 0.17em;
+        color: $main-color-text;
+        margin-bottom: 25px;
+    }
+
+    .form {
+        max-width: 320px;
+        margin-bottom: 50px;
+
+        &__lable {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        &__date-in,
+        &__select-persons {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+        &__date-interval {
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        &__wrap-accommodation {
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        &__date-in,
+        &__date-out,
+        &__select-persons,
+        &__input {
+            max-width: 320px;
+            width: 100%;
+        }
+
+        &__aside {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            margin-left: 0;
+            justify-content: space-between;
+        }
+
+        &__calendar,
+        &__persons,
+        &__children {
+            width: 100%;
+        }
+
+        .select-country {
+            margin-right: 30px;
+            margin-bottom: 0;
+        }
+
+    }
+
+    .select-country {
+
+        &__header,
+        &__body {
+            width: auto;
+            min-width: 145px;
+        }
+    }
+
+    .select-currency {
+        &__currencies {
+            width: auto;
+            min-width: 145px;
+        }
+    }
+
+    &__item {
+        margin-bottom: 200px;
+
+        &:not(:first-child) {
+            margin-top: 100px;
+
+        }
+    }
+
+    &__img {
+        width: 100%;
+        min-height: 539px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__img img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+
+    }
+
+    &__content {
+        background-color: #ffffff;
+        max-width: 942px;
+        margin: -100px auto 0;
+        position: relative;
+        padding-top: 34px;
+
+
+
+    }
+
+    &__name {
+        font-family: 'Oranienbaum Regular', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 1.26;
+        text-align: center;
+        letter-spacing: 0.17em;
+        text-transform: uppercase;
+        color: $main-color-text;
+        margin-bottom: 50px;
+
+    }
+
+    &__description {
+        margin-bottom: 50px;
+    }
+
+    &__description p {
+        font-family: 'PlayfairDisplay Regular', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 1.26;
+        text-align: center;
+        letter-spacing: 0.17em;
+        color: $main-color-text;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__group-btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__btn-more {
+        border: 1px solid #000000;
+        margin-right: 40px;
+        padding: 19px 40px;
+        color: $main-color-text;
+    }
+
+    &__btn-booking {
+        color: $main-color-text;
+        padding: 19px 40px;
+    }
+
+}
