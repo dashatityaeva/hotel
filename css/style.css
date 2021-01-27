@@ -451,7 +451,6 @@ p, h1, h2, h3, h4, ul {
 
 .header {
   background-color: #362f2f;
-  background-image: url(../img/main-bg.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -848,9 +847,6 @@ p, h1, h2, h3, h4, ul {
 }
 
 @media (max-width: 375px) {
-  .header {
-    background-image: url(../img/main-bg-mb.svg);
-  }
   .header__subtitle {
     font-size: 12px;
   }
@@ -1625,5 +1621,72 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
   .question-answer__item--active .question-answer__title:before {
     right: 4px;
   }
+}
+
+.contacts {
+  padding: 100px 0;
+}
+
+.contacts__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contacts__map {
+  width: 55%;
+}
+
+.contacts__content {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px;
+  max-width: 500px;
+}
+
+.contacts__address {
+  font-family: 'PlayfairDisplay Regular', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.26;
+  letter-spacing: 0.17em;
+  color: #000000;
+  margin-bottom: 22px;
+}
+
+.socials-nw__text {
+  display: block;
+  font-size: 18px;
+  line-height: 1.26;
+  letter-spacing: 0.17em;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.socials-nw__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socials-nw__item {
+  width: 50px;
+  height: 50px;
+}
+
+.socials-nw__item:not(:last-child) {
+  margin-right: 47px;
 }
 /*# sourceMappingURL=style.css.map */
