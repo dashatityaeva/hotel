@@ -455,6 +455,7 @@ p, h1, h2, h3, h4, ul {
 
 .header {
   background-color: #362f2f;
+  background-image: url(../img/main-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -855,6 +856,9 @@ p, h1, h2, h3, h4, ul {
 }
 
 @media (max-width: 375px) {
+  .header {
+    background-image: url(../img/main-bg-mb.png);
+  }
   .header__subtitle {
     font-size: 12px;
   }
@@ -1960,7 +1964,7 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
   width: 100%;
 }
 
-.main-room .form .form .select-country {
+.main-room .form .select-country {
   margin-right: 30px;
   margin-bottom: 0;
 }
@@ -2215,7 +2219,7 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
   .main-room .main__title {
     margin-bottom: 30px;
   }
-  .main-room .select-country {
+  .main-room .form .select-country {
     margin-right: 0;
   }
   .main-room__wrap {

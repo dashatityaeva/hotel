@@ -1,12 +1,17 @@
 const menu = document.querySelectorAll('.nav__item-list');
 
 /////////////active link of menu////////////
-const clearLink = function () {
-    menu.forEach(item => item.classList.remove('nav__item-list_active-top'));
+const clearLink = function (link) {
+    menu.forEach(item => {
+        if (item.innerText !== link) {
+            item.classList.remove('nav__item-list_active-top')
+        }
+    });
 }
 menu.forEach(item => {
     item.addEventListener('click', function() {
-        clearLink();
+        clearLink(item.innerText);
+        console.log('item: ', item.innerText);
         item.classList.add('nav__item-list_active-top')
     })
 })

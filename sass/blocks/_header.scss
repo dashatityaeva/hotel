@@ -1,6 +1,6 @@
 .header {
     background-color: rgb(54, 47, 47);
-    //background-image: url(../img/main-bg.svg);
+    background-image: url(../img/main-bg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -378,7 +378,7 @@
 
 @media (max-width: 375px) {
     .header {
-        //background-image: url(../img/main-bg-mb.svg);
+        background-image: url(../img/main-bg-mb.png);
 
         &__subtitle {
             font-size: 12px;

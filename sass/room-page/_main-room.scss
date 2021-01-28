@@ -100,11 +100,11 @@
         &__children {
             width: 100%;
         }
-        .form {
+        
         .select-country {
             margin-right: 30px;
             margin-bottom: 0;
-        }}
+        }
 
     }
 
@@ -359,8 +359,10 @@
                 margin-bottom: 30px;
             }
         }
-        .select-country {
-            margin-right: 0;
+        .form {
+            .select-country {
+                margin-right: 0;
+            }
         }
         &__wrap {
             margin-bottom: 120px;

@@ -8,7 +8,7 @@
     <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font">
     <link rel="preload" href="fonts/Oranienbaum-Regular.woff" as="font">
     <link rel="preload" href="fonts/PlayfairDisplay-Regular.woff" as="font">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 
 </head>
 
@@ -19,24 +19,24 @@
                 <div class="header__wrap">
                     <div class="navigation-block ">
                         <div class="square"></div>
-                        <a href="#" class="logo">Название <br> компании</a>
+                        <a href="index.html" class="logo">Название <br> компании</a>
 
                         <nav class="nav ">
                             <ul class="nav__item">
                                 <li class="nav__item-list nav__item-list_active-top">
-                                    <a href="#" class="nav__item-link">Главная</a>
+                                    <a href="index.html" class="nav__item-link">Главная</a>
                                 </li>
                                 <li class="nav__item-list">
-                                    <a href="#booking" class="nav__item-link">Бронь</a>
+                                    <a href="index.html#booking" class="nav__item-link">Бронь</a>
                                 </li>
                                 <li class="nav__item-list">
                                     <a href="rooms.html" class="nav__item-link">Номера</a>
                                 </li>
                                 <li class="nav__item-list">
-                                    <a href="#information" class="nav__item-link">Информация</a>
+                                    <a href="index.html#information" class="nav__item-link">Информация</a>
                                 </li>
                                 <li class="nav__item-list">
-                                    <a href="#contacts-page" class="nav__item-link">Контакты</a>
+                                    <a href="index.html#contacts-page" class="nav__item-link">Контакты</a>
                                 </li>
                             </ul>
                         </nav>
@@ -64,16 +64,16 @@
                 <div class="header__main">
                     <h2 class="header__subtitle">Апартаменты в Великом Новгороде</h2>
                     <h1 class="header__title">название компании</h1>
-                    <a class="btn header__btn" href="#">Посмотреть</a>
+                    <a class="btn header__btn" href="rooms.html">Посмотреть</a>
                     <!-- <button class="btn">Посмотреть</button> -->
                 </div>
-                <a href="#" class="down"></a>
+                <a href="index.html#booking" class="down"></a>
                 <button class="nav-toggle" type="button"><span></span></button>
             </div>
         </div>
     </header>
     <main class="main">
-        <section class="booking">
+        <section id="booking" class="booking">
             <div class="container">
                 <h2 class="main__title">Бронирование номеров</h2>
                 <p class="booking__description">Выберите даты заезда, выезда и количество гостей</p>
@@ -145,7 +145,7 @@
                         <h3 class="works__title">Апартаменты <br><span>«Домашнее тепло»</span></h3>
                         <p class="works__description">c балконом и видом на город расположены в Великом Новгороде,
                             Новгородской области. На всей территории работает бесплатный Wi-Fi.</p>
-                        <a class="btn works__btn" href="rooms.html#book">Посмотреть</a>
+                        <a class="btn works__btn" href="rooms.html#roomHomeWarmth">Посмотреть</a>
                     </div>
                     <div class="works__img-wrap">
                         <img src="img/work-1.png" alt="">
@@ -157,7 +157,7 @@
                         <p class="works__description works__description--reverse">c балконом и видом на город
                             расположены в Великом Новгороде, Новгородской области. На всей территории работает
                             бесплатный Wi-Fi.</p>
-                        <a class="btn works__btn works__btn--reverse" href="#">Посмотреть</a>
+                        <a class="btn works__btn works__btn--reverse" href="rooms.html#roomHomeСomfort">Посмотреть</a>
                     </div>
                     <div class="works__img-wrap">
                         <img src="img/work-2.png" alt="">
@@ -168,7 +168,7 @@
                         <h3 class="works__title">Апартаменты <br><span>«Речная»</span></h3>
                         <p class="works__description">c балконом и видом на город расположены в Великом Новгороде,
                             Новгородской области. На всей территории работает бесплатный Wi-Fi.</p>
-                        <a class="btn works__btn" href="#">Посмотреть</a>
+                        <a class="btn works__btn" href="rooms.html#roomRiver">Посмотреть</a>
                     </div>
                     <div class="works__img-wrap">
                         <img src="img/work-3.png" alt="">
@@ -177,7 +177,7 @@
             </div>
             <button class="works__btn-more">Посмотреть все</button>
         </section>
-        <section class="information">
+        <section id="information" class="information">
             <div class="container">
                 <h2 class="main__title">Информация</h2>
                 <h3 class="information__subtitle">Здесь будет вся необходимая информация, которой нет на booking.com
@@ -305,7 +305,7 @@
                 <!-- спойлер/аккардион -->
             </div>
         </section>
-        <section class="contacts">
+        <section id="contacts-page" class="contacts">
             <h2 class="main__title">Контакты</h2>
             <div class="contacts__wrap">
                 <div class="contacts__map">
@@ -343,24 +343,24 @@
             <div class="footer__wrap">
                 <div class="navigation-block ">
                     <div class="square"></div>
-                    <a href="#" class="logo">Название <br> компании</a>
+                    <a href="index.html" class="logo">Название <br> компании</a>
 
                     <nav class="nav ">
                         <ul class="nav__item">
                             <li class="nav__item-list nav__item-list_active-top">
-                                <a href="#" class="nav__item-link">Главная</a>
+                                <a href="index.html" class="nav__item-link">Главная</a>
                             </li>
                             <li class="nav__item-list">
-                                <a href="#booking" class="nav__item-link">Бронь</a>
+                                <a href="index.html#booking" class="nav__item-link">Бронь</a>
                             </li>
                             <li class="nav__item-list">
-                                <a href="#hotel-rooms" class="nav__item-link">Номера</a>
+                                <a href="rooms.html" class="nav__item-link">Номера</a>
                             </li>
                             <li class="nav__item-list">
-                                <a href="#information" class="nav__item-link">Информация</a>
+                                <a href="index.html#information" class="nav__item-link">Информация</a>
                             </li>
                             <li class="nav__item-list">
-                                <a href="#contacts-page" class="nav__item-link">Контакты</a>
+                                <a href="index.html#contacts-page" class="nav__item-link">Контакты</a>
                             </li>
                         </ul>
                     </nav>
