@@ -894,6 +894,7 @@ p, h1, h2, h3, h4, ul {
   -moz-appearance: none;
        appearance: none;
   padding-left: 17px;
+  background-color: #ffffff;
 }
 
 .form__date-in {
@@ -973,6 +974,7 @@ p, h1, h2, h3, h4, ul {
      -moz-appearance: none;
           appearance: none;
   padding: 15px 60px 15px 58px;
+  background-color: #ffffff;
 }
 
 .form__input {
@@ -1174,6 +1176,7 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
      -moz-appearance: none;
           appearance: none;
   padding: 16px 0px 16px 16px;
+  background-color: #ffffff;
 }
 
 @media (max-width: 1180px) {
