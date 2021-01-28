@@ -161,10 +161,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 input[name="calendar-check-in"]::-webkit-calendar-picker-indicator {
     background-image: url(../img/calendar-in.svg);
+    z-index: 33;
 }
 
 input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
     background-image: url(../img/calendar-out.svg);
+    z-index: 33;
 }
 
 /* custom select with img */
@@ -264,8 +266,8 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
         border: 1px solid #000000;
         appearance: none;
         padding: 16px 0px 16px 16px;
-        background-color: transparent;
-        z-index: 33;
+        background-color: #ffffff;
+        
     }
 }
 
