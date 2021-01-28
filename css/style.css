@@ -1177,6 +1177,7 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
           appearance: none;
   padding: 16px 0px 16px 16px;
   background-color: transparent;
+  z-index: 33;
 }
 
 @media (max-width: 1180px) {
