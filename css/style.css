@@ -1820,11 +1820,11 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 200px;
 }
 
 .main-room__booking-wrap {
   width: 30%;
-  border: 1px solid red;
   padding-left: 100px;
   padding-right: 17px;
   display: -webkit-box;
@@ -1839,16 +1839,8 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
   max-width: 330px;
 }
 
-.main-room__booking--fixed {
-  margin-top: 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
 .main-room__apartment {
   width: 70%;
-  border: 1px solid red;
 }
 
 .main-room__title {
@@ -1945,6 +1937,7 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
   color: #000000;
   margin-bottom: 11px;
   max-width: 200px;
+  cursor: pointer;
 }
 
 .main-room__checkbox label {
@@ -2000,6 +1993,11 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
   background: linear-gradient(180deg, #EBFF00 0%, #FF8A00 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.main-room__checkbox:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .main-room__item {
@@ -2088,5 +2086,49 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
 .main-room__btn-booking {
   color: #000000;
   padding: 19px 40px;
+}
+
+.pagination {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagination__item {
+  min-width: 50px;
+  height: 50px;
+  border: 1px solid #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+  line-height: 1.26;
+  text-align: center;
+  padding: 3px;
+}
+
+.pagination__item:not(:last-child) {
+  margin-right: 31px;
+}
+
+.pagination__item:hover, .pagination__item--active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#EBFF00), to(#FF8A00));
+  background: linear-gradient(180deg, #EBFF00 0%, #FF8A00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -o-border-image: linear-gradient(180deg, #EBFF00 0%, #FF8A00 100%);
+     border-image: -webkit-gradient(linear, left top, left bottom, from(#EBFF00), to(#FF8A00));
+     border-image: linear-gradient(180deg, #EBFF00 0%, #FF8A00 100%);
+  border-image-slice: 1;
 }
 /*# sourceMappingURL=style.css.map */
