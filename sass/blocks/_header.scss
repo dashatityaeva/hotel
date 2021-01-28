@@ -237,6 +237,7 @@
 
 .none-padding {
     padding: 0;
+    height: 100vh;
 }
 
 
@@ -327,12 +328,14 @@
             &__item {
                 flex-direction: column;
                 justify-content: flex-start;
+                
 
                 &-list:not(:last-child) {
                     margin-right: 0px;
                     margin-bottom: 48px;
                 }
             }
+            
         }
 
         .lang-switcher {
@@ -364,8 +367,10 @@
         top: auto;
         bottom: 54px;
         display: flex;
-        width: 100%;
+        align-items: flex-end;
         justify-content: center;
+        width: 100%;
+    
         z-index: 4;
     }
 

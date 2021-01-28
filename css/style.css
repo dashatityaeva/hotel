@@ -724,6 +724,7 @@ p, h1, h2, h3, h4, ul {
 
 .none-padding {
   padding: 0;
+  height: 100vh;
 }
 
 @media (max-width: 1280px) {
@@ -842,10 +843,13 @@ p, h1, h2, h3, h4, ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 100%;
     z-index: 4;
   }
 }
@@ -1807,12 +1811,49 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
   background-color: #ffffff;
 }
 
+.header-room__wrap {
+  position: relative;
+}
+
 .header-room .logo {
   color: #000000;
 }
 
 .header-room .nav__item-link {
   color: #000000;
+}
+
+.header-room .header__socials {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header-room .nav-toggle span,
+  .header-room .nav-toggle span::before,
+  .header-room .nav-toggle span::after {
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -11px;
+    width: 22px;
+    height: 2px;
+    background-color: #000000;
+  }
+  .header-room .nav__item-link {
+    color: #ffffff;
+  }
+  .header-room .header__socials-active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 425px) {
+  .header-room {
+    padding-bottom: 160px;
+  }
 }
 
 .main-room__wrap {
@@ -1919,7 +1960,7 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
   width: 100%;
 }
 
-.main-room .form .select-country {
+.main-room .form .form .select-country {
   margin-right: 30px;
   margin-bottom: 0;
 }
@@ -2035,6 +2076,7 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
 .main-room__content {
   background-color: #ffffff;
   max-width: 942px;
+  width: 90%;
   margin: -100px auto 0;
   position: relative;
   padding-top: 34px;
@@ -2104,7 +2146,7 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
 }
 
 .pagination__item {
-  min-width: 50px;
+  width: 50px;
   height: 50px;
   border: 1px solid #000000;
   display: -webkit-box;
@@ -2113,9 +2155,6 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-size: 30px;
   line-height: 1.26;
   text-align: center;
@@ -2135,5 +2174,84 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
      border-image: -webkit-gradient(linear, left top, left bottom, from(#EBFF00), to(#FF8A00));
      border-image: linear-gradient(180deg, #EBFF00 0%, #FF8A00 100%);
   border-image-slice: 1;
+}
+
+@media (max-width: 1200px) {
+  .main-room__booking-wrap {
+    display: none;
+  }
+  .main-room__apartment {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-room__booking-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 0 10px;
+  }
+  .main-room__booking {
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+  .main-room__group-btn {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-room__btn-more {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .main-room__btn-booking {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .main-room .main__title {
+    margin-bottom: 30px;
+  }
+  .main-room .select-country {
+    margin-right: 0;
+  }
+  .main-room__wrap {
+    margin-bottom: 120px;
+  }
+  .main-room__name {
+    font-size: 16px;
+  }
+  .main-room__name span {
+    font-size: 18px;
+  }
+  .main-room__description p {
+    font-size: 12px;
+  }
+  .main-room__img {
+    min-height: 320px;
+  }
+  .main-room__btn-more {
+    max-width: 170px;
+    padding: 13px 40px;
+    font-size: 14px;
+  }
+  .main-room__btn-booking {
+    font-size: 14px;
+  }
+  .main-room__item {
+    margin-bottom: 120px;
+  }
+  .main-room .pagination__item {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 0.8;
+  }
+  .main-room .pagination__item:not(:last-child) {
+    margin-right: 16px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
