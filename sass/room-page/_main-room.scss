@@ -5,7 +5,7 @@
         flex-wrap: wrap;
     }
 
- 
+
     &__booking-wrap {
         width: 30%;
         border: 1px solid red;
@@ -13,11 +13,13 @@
         padding-right: 17px;
         display: flex;
         justify-content: flex-end;
-       
+
     }
+
     &__booking {
         max-width: 330px;
     }
+
     &__booking--fixed {
         margin-top: 20px;
         position: fixed;
@@ -119,6 +121,62 @@
             min-width: 145px;
         }
     }
+
+    &__checkbox {
+        font-size: 20px;
+        font-weight: normal;
+        line-height: 1.26;
+        letter-spacing: 0.17em;
+        color: $main-color-text;
+        margin-bottom: 11px;
+        max-width: 200px;
+        label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        span {
+            width: 23px;
+            height: 23px;
+            background-color: #000000;
+            vertical-align: middle;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        span span {
+            font-size: 18px;
+            font-family: 'Oranienbaum Regular', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            color: $secondary-color-text ;
+            padding-left: 4px;
+            line-height: 1.26;
+            text-align: center;
+            letter-spacing: 0.17em;
+            
+        }
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked + label {
+            font-weight: bold;
+        }
+
+        input[type="checkbox"]:checked + label span  span{
+            background: linear-gradient(180deg, #EBFF00 0%, #FF8A00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        
+    }
+
+
 
     &__item {
         margin-bottom: 200px;

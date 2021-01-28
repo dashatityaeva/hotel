@@ -1937,6 +1937,71 @@ input[name="calendar-check-out"]::-webkit-calendar-picker-indicator {
   min-width: 145px;
 }
 
+.main-room__checkbox {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.26;
+  letter-spacing: 0.17em;
+  color: #000000;
+  margin-bottom: 11px;
+  max-width: 200px;
+}
+
+.main-room__checkbox label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-room__checkbox span {
+  width: 23px;
+  height: 23px;
+  background-color: #000000;
+  vertical-align: middle;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-room__checkbox span span {
+  font-size: 18px;
+  font-family: 'Oranienbaum Regular', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+  padding-left: 4px;
+  line-height: 1.26;
+  text-align: center;
+  letter-spacing: 0.17em;
+}
+
+.main-room__checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.main-room__checkbox input[type="checkbox"]:checked + label {
+  font-weight: bold;
+}
+
+.main-room__checkbox input[type="checkbox"]:checked + label span span {
+  background: -webkit-gradient(linear, left top, left bottom, from(#EBFF00), to(#FF8A00));
+  background: linear-gradient(180deg, #EBFF00 0%, #FF8A00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .main-room__item {
   margin-bottom: 200px;
 }
